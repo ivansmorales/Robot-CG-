@@ -1,0 +1,2 @@
+﻿  CG_Demo.cpp
+c:\users\a01652650\downloads\cg_demo_vs2015\cg_pong\cg_demo\source\cg_demo.cpp(20): fatal error C1083: Cannot open include file: 'freeglut.h': No such file or directory
