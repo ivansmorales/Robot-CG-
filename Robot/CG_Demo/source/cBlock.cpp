@@ -14,7 +14,7 @@ Block::~Block()
 {
 }
 
-void Block::draw() { 
+void Block::draw() {
 	glPushMatrix(); {
 		glColor3f(color[0], color[1], color[2]);
 		glScalef(size[0], size[1], size[2]);

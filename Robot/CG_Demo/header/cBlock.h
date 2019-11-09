@@ -24,8 +24,8 @@
 
 #include <stdio.h>
 
-#ifndef _BLOCK
-#define _BLOCK
+#ifndef _BBLOCK
+#define _BBLOCK
 
 class Block
 {

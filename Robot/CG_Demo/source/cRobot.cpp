@@ -72,7 +72,7 @@ Robot::~Robot()
 
 void Robot::draw() {
 	parts[BODY]->draw();
-	glPushMatrix(); {	
+	glPushMatrix(); {
 		glTranslatef(0, 0.5f, 0);
 		parts[NECK]->draw();
 		glPushMatrix(); {
@@ -83,14 +83,14 @@ void Robot::draw() {
 	}
 	glPopMatrix();
 
-	glPushMatrix(); {	
+	glPushMatrix(); {
 		glTranslatef(0.7f, 0.32f, 0);
-		parts[RSHOULDER]->draw(); 
-		glPushMatrix(); {	
+		parts[RSHOULDER]->draw();
+		glPushMatrix(); {
 			glTranslatef(0.5f, 0.0f, 0);
 			parts[RARM]->draw();
 			glPushMatrix(); {
-				glTranslatef(0.6f, 0.0f, 0);
+				glTranslatef(0.55f, 0.0f, 0);
 				parts[RHAND]->draw();
 			}
 			glPopMatrix();
@@ -99,14 +99,14 @@ void Robot::draw() {
 	}
 	glPopMatrix();
 
-	glPushMatrix(); {	
+	glPushMatrix(); {
 		glTranslatef(-0.7f, 0.32f, 0);
 		parts[LSHOULDER]->draw();
-		glPushMatrix(); {	
+		glPushMatrix(); {
 			glTranslatef(-0.5f, 0.0f, 0);
 			parts[LARM]->draw();
 			glPushMatrix(); {
-				glTranslatef(-0.6f, 0.0f, 0);
+				glTranslatef(-0.55f, 0.0f, 0);
 				parts[LHAND]->draw();
 			}
 			glPopMatrix();
@@ -117,14 +117,14 @@ void Robot::draw() {
 
 	glTranslatef(0, -0.5f, 0);
 	parts[HIPS]->draw();
-	glPushMatrix(); { 
+	glPushMatrix(); {
 		glTranslatef(-0.3f, -0.70f, 0);
 		parts[RLEG]->draw();
 		glPushMatrix(); {
-			glTranslatef(0, -0.70f, 0);
+			glTranslatef(0, -0.60f, 0);
 			parts[RANKLE]->draw();
 			glPushMatrix(); {
-				glTranslatef(0, -0.60f, 0);
+				glTranslatef(0, -0.50f, 0);
 				parts[RFOOT]->draw();
 			}glPopMatrix();
 		}
@@ -136,10 +136,10 @@ void Robot::draw() {
 		glTranslatef(0.3f, -0.70f, 0);
 		parts[LLEG]->draw();
 		glPushMatrix(); {
-			glTranslatef(0, -0.70f, 0);
+			glTranslatef(0, -0.60f, 0);
 			parts[LANKLE]->draw();
 			glPushMatrix(); {
-				glTranslatef(0, -0.60f, 0);
+				glTranslatef(0, -0.50f, 0);
 				parts[LFOOT]->draw();
 			}
 			glPopMatrix();
